@@ -25,7 +25,7 @@ public class Main {
             } else
                 System.out.println("Book " + (i + 1) + "\nTitle: " + title[i] + "\nAuthor: " + authorBook[i] + "\nYear: " + year[i] + "\n");
         }
-        System.out.println("=== SEARCH BOOK ===\n");
+        System.out.println("\n=== SEARCH BOOK ===\n");
         for (int i = 0; i < book.length; i++) {
             switch (title[i]) {
                 case "Dom Casmurro":
@@ -43,10 +43,15 @@ public class Main {
         System.out.println("\n=== REMOVE BOOK ===");
         for (int i = 0; i < book.length; i++) {
             if (i == 2) {
-                System.out.println("Removing book: " + title[i]);
+                System.out.println("Removing book: " + title[i]+"\n");
                 break;
             }
 
+        }
+        book = new byte[2];
+        System.out.println("\n=== FINAL LIST BOOK ===\n");
+        for (int i = 0; i < book.length; i++) {
+            System.out.println("Book " + (i+1) + "\nTitle: " + title[i] + "\nAuthor: " + authorBook[i] + "\nYear: " + year[i] + "\n");
         }
     }
 }
